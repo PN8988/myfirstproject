@@ -1,0 +1,21 @@
+<p>recruiter-details works!</p>
+<h2>Player details</h2>
+<hr>
+<div *ngIf="recruiter">
+    <div>
+        <label><b>Recruiter Id: </b></label> {{recruiter.id}}
+    </div>
+    <div>
+        <label><b>Recruiter Name: </b></label> {{recruiter.recName}}
+    </div>
+    <div>
+        <label><b>Recruiter Email: </b></label> {{recruiter.email}}
+    </div>
+    <div>
+        <label><b>Company:</b></label>{{recruiter.company}}
+    </div>
+
+</div>
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Recruiter List</button><br>
